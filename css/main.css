@@ -1,0 +1,53 @@
+.header {
+  background-image: url(/img/header.jpg);
+  
+  height: 500px; }
+  .header .navBar {
+    background-color: #fff;
+    height: 50px;
+    margin: auto;
+    display: flex; }
+    .header .navBar .navUl {
+      display: inline-block;
+      list-style: none;
+      display: flex; }
+      .header .navBar .navUl li {
+        display: inline-block;
+        justify-content: space-between;
+        flex-direction: row; }
+        .header .navBar .navUl li .navLink {
+          text-transform: uppercase;
+          color: #5e5852;
+          font-weight: 600; }
+        .header .navBar .navUl li .navLink:hover {
+          text-decoration: underline; }
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px; }
+  .section1 h2 {
+    color: #5e5852; }
+  .section1 h1 {
+    color: #c6bdb6; }
+
+.sectionAbout {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+  margin-top: 90px;
+  width: 90%; }
+  .sectionAbout article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left; }
+    .sectionAbout article h2 {
+      color: #5e5852;
+      text-transform: uppercase; }
+    .sectionAbout article p {
+      color: #5e5852;
+      padding-left: 30px;
+      padding-right: 60px; }

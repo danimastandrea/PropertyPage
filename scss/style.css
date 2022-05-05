@@ -1,0 +1,314 @@
+/* variables */
+.encabezado {
+  background-color: #000;
+  height: 500px;
+}
+
+.encabezado .navBar {
+  background-color: #fff;
+  height: 50px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.encabezado .navBar .navUl {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10px;
+}
+
+.encabezado .navBar .navUl li {
+  display: inline-block;
+}
+
+.encabezado .navBar .navUl li .navLink {
+  text-transform: uppercase;
+  color: #5e5852;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.encabezado .navBar .navUl li .navLink:hover {
+  text-decoration: underline;
+  color: #c6bdb6;
+}
+
+.encabezado .imgHeader {
+  height: 600px;
+  width: 100%;
+}
+
+.section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section1 h2 {
+  color: #5e5852;
+  margin-top: 250px;
+  margin-bottom: 50px;
+  font-family: "Quattrocento", serif;
+}
+
+.section1 h1 {
+  color: #c6bdb6;
+  font-family: "Quattrocento", serif;
+}
+
+.sectionAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #f1f1f1;
+  margin-top: 90px;
+  width: 100%;
+}
+
+.sectionAbout article {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  margin-top: 90px;
+  padding-left: 60px;
+}
+
+.sectionAbout article .btn {
+  color: #5e5852;
+  border: 2px solid;
+  border-radius: 0%;
+  margin-top: 30px;
+}
+
+.sectionAbout article .btn:hover {
+  background-color: #5e5852;
+  color: #fff;
+  border: #5e5852;
+  border: 2px solid #5e5852;
+  border-radius: 0%;
+}
+
+.sectionAbout article h2 {
+  color: #5e5852;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: "Quattrocento", serif;
+}
+
+.sectionAbout article p {
+  color: #5e5852;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding-right: 60px;
+}
+
+.sectionAbout .aside .imgAbout {
+  padding-left: 20px;
+}
+
+.sectionMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 50px;
+}
+
+.sectionMenu .imgMenu {
+  width: 400px;
+  height: 300px;
+}
+
+.sectionMenu a:hover {
+  background-color: #fff;
+  opacity: .3;
+}
+
+.sectionEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 90px;
+}
+
+.sectionEmail h2 {
+  color: #5e5852;
+  text-transform: uppercase;
+  font-family: "Quattrocento", serif;
+}
+
+.sectionEmail p {
+  color: #5e5852;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.sectionEmail .suscribeForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 35px;
+}
+
+.sectionEmail .suscribeForm h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.sectionEmail .btn {
+  color: #c6bdb6;
+  border: 2px solid;
+  border-radius: 0%;
+  margin-top: 30px;
+}
+
+.sectionEmail .btn:hover {
+  background-color: #c6bdb6;
+  color: #fff;
+  border: #c6bdb6;
+  border: 2px solid #c6bdb6;
+  border-radius: 0%;
+}
+
+.sectionCards {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f1f1f1;
+}
+
+.sectionCards h2 {
+  font-family: "Quattrocento", serif;
+  color: #5e5852;
+  margin-top: 90px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sectionCards .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.testimonials {
+  background-image: url(/img/wwu.jpg);
+  height: 500px;
+  text-align: center;
+  width: 80%;
+  padding-left: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonials h3 {
+  font-family: "Quattrocento", serif;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.testimonials p {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #c6bdb6;
+}
+
+footer .footerTitles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footerTitles h5 {
+  margin-top: 50px;
+  font-family: "Quattrocento", serif;
+  color: #5e5852;
+}
+
+footer .footerTitles p {
+  font-family: "Montserrat", sans-serif;
+  color: #5e5852;
+  font-weight: 600;
+}
+
+footer .footerLinks {
+  font-family: "Quattrocento", serif;
+  font-weight: 800;
+  color: #5e5852;
+}
+/*# sourceMappingURL=style.css.map */

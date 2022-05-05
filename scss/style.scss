@@ -1,0 +1,263 @@
+/* variables */
+$fontColor: #5e5852;
+$details: #c6bdb6;
+$titleFont: 'Quattrocento', serif;
+$textFont: 'Montserrat', sans-serif;
+
+.encabezado{
+    background-color: #000;
+    height: 500px;
+    
+    
+
+.navBar{
+        background-color: #fff;
+        height: 50px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        
+
+        .navUl{
+           
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            
+            
+            li{
+                display: inline-block;
+                
+                
+                
+
+                .navLink{
+                   text-transform: uppercase;
+                   color: $fontColor;
+                   font-weight: 600;
+                   font-family: $textFont;
+                   padding-left: 50px;
+                   padding-right: 50px;
+                   
+                   
+                }
+                .navLink:hover{
+                    text-decoration: underline;
+                    color: $details;
+                   
+                }
+            }
+
+        }
+    }
+    .imgHeader{
+        height: 600px;
+        width: 100%;
+    }
+}
+
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+
+    h2{
+        color: $fontColor;
+        margin-top: 250px;
+        margin-bottom: 50px;
+        font-family: $titleFont;
+
+    }
+    h1{
+        color: $details;
+        font-family: $titleFont;
+    }
+
+}
+
+.sectionAbout{
+    display: flex;
+   flex-direction: row;
+   background-color: #f1f1f1;
+   margin-top: 90px;
+   width: 100%;
+
+            article{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: left;
+       margin-top: 90px;
+       padding-left: 60px;
+
+       .btn{
+           color: $fontColor;
+           border: 2px solid;
+           border-radius: 0%;
+           margin-top: 30px;
+       }
+       .btn:hover{
+           background-color: $fontColor ;
+           color: #fff;
+           border: $fontColor;
+           border: 2px solid $fontColor;
+           border-radius: 0%;
+       }
+
+h2{
+           color: $fontColor;
+           text-transform: uppercase;
+           margin-bottom: 30px;
+           font-family: $titleFont;
+           
+}
+    p{
+           color: $fontColor;
+           font-family: $textFont;
+           font-weight: 600;
+           padding-right: 60px;
+ }
+}
+   .aside{
+       
+       .imgAbout{
+           padding-left: 20px;
+       }   
+   }  
+     
+     
+} 
+.sectionMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    .imgMenu{
+        width: 400px;
+        height: 300px;
+        
+    }
+    a:hover{
+        background-color: #fff;
+        opacity: .3;
+    }
+}
+.sectionEmail{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 90px;
+    h2{
+        color: $fontColor;
+           text-transform: uppercase;
+           font-family: $titleFont;
+    }
+    p{
+        color: $fontColor;
+           font-family: $textFont;
+           font-weight: 600;
+           margin-top: 15px;
+    }
+    .suscribeForm{
+        display: flex;
+        flex-direction: row;
+        margin-top: 35px;
+        h6{
+            font-family: $textFont;
+            font-weight: 600;
+        }
+    }
+    .btn{
+        color: $details;
+        border: 2px solid;
+        border-radius: 0%;
+        margin-top: 30px;
+    }
+    .btn:hover{
+        background-color: $details ;
+        color: #fff;
+        border: $details;
+        border: 2px solid $details;
+        border-radius: 0%;
+    }
+}
+
+
+.sectionCards{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+
+    h2{
+        font-family: $titleFont;
+        color: $fontColor;
+        margin-top: 90px;
+        text-align: center;
+        margin-bottom: 50px;
+        
+    }
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 50px;
+
+    }
+}
+ 
+.testimonials{
+    background-image: url(/img/wwu.jpg);
+    height: 500px;
+    text-align: center;
+    width: 80%;
+    padding-left: 300px;
+    display: flex;
+    
+    flex-direction: column;
+
+    h3{
+        font-family: $titleFont;
+        color: #fff;
+        margin-top: 100px;
+       
+
+
+    }
+    p{
+        font-family: $textFont;
+        color: #fff;
+        font-weight: 700;
+    }
+}
+
+footer{
+    background-color: $details;
+
+    .footerTitles{
+        display: flex;
+        flex-direction: column;
+        
+        h5{
+            margin-top: 50px;
+            font-family: $titleFont;
+            color: $fontColor;
+        }
+        p{
+            font-family: $textFont;
+            color: $fontColor;
+            font-weight: 600;
+        }
+    }
+    .footerLinks{
+       font-family: $titleFont;
+       font-weight: 800;
+       color: #5e5852;
+    }
+}
