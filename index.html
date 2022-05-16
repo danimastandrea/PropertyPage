@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/scss/style.css">
+    <link rel="stylesheet" href="scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Quattrocento&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
                <li></li>
             </ul>
         </nav>    
-        <img class="imgHeader" src="/img/header2.jpg" alt="">    
+        <img class="imgHeader" src="img/header2.jpg" alt="">    
     </header>
 
     <section class="section1">
@@ -32,14 +32,20 @@
 
     </section>
 
-    <section class="sectionMenu">
-        <a href="">  <img class="imgMenu" src="img/menu1.jpg" alt=""> </a>
 
-        <a href="">  <img class="imgMenu" src="img/menu2.jpg" alt=""> </a>
 
-        <a href="">  <img class="imgMenu" src="img/menu3.jpg" alt=""> </a>
+    <section class="sectionGallery">
+       
 
+           <img class="imgMenu" src="img/menu1.jpg" alt=""> 
+            
+              <img class="imgMenu" src="img/menu2.jpg" alt=""> 
+            
+              <img class="imgMenu" src="img/menu3.jpg" alt=""> 
+      
     </section>
+
+
 
     <section class="sectionAbout">
         <article>
@@ -48,25 +54,40 @@
             <button type="button" class="btn btn-outline-secondary">LEARN MORE</button>
         </article>
         <aside>
-            <img class="imgAbout" src="/img/interior.jpg" alt="">
+            <img class="imgAbout" src="img/interior.jpg" alt="">
 
         </aside>
 
     </section>
 
+
+
     <section class="sectionEmail">
-        <h2>Sign Up to Receive Updates</h2>
-        <p>We promise not to spam you.</p>
+        <div class="divEmail">
 
-        <form action="get" class="suscribeForm">
-           <h6> Name <input type="text" placeholder="name"> </h6> 
-           <h6> Mail <input type="email" placeholder="mail"> </h6>
-        </form>
-
-        <button type="button" class="btn btn-outline-secondary">SUBMIT</button>
+            <h2>Sign Up to Receive Updates</h2>
+            <p>We promise not to spam you.</p>
+            
+            
+            <form class="suscribeForm">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                </div>
+                
+            </form>
+            <button type="button" class="btn btn-outline-secondary">SUBMIT</button>
+        </div>
 
 
     </section>
+
+
 
     <section class="sectionCards">
         
@@ -77,17 +98,23 @@
 
    
     <div class="card" style="width: 18rem;">
-        <img src="/img/9.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">2900 VALMERE DR
-            2900 VALMERE DR, MALIBU, CA 90265
-            
-            $4,750,000</p>
-        </div>
+        <a href="">
+            <img src="/img/9.jpg" class="card-img-top" alt="...">
+        </a>
+            <div class="card-body">
+              <p class="card-text">2900 VALMERE DR
+                2900 VALMERE DR, MALIBU, CA 90265
+                
+                $4,750,000</p>
+            </div>
     </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="/img/card5.jpg" class="card-img-top" alt="...">
+            <a href="">
+
+                <img src="/img/card5.jpg" class="card-img-top" alt="...">
+            </a>
+
             <div class="card-body">
               <p class="card-text">212 E 48th Street Unit: 9-E 
                 $3,695
@@ -96,7 +123,10 @@
           </div>
 
           <div class="card" style="width: 18rem;">
-            <img src="/img/crad2.jpg" class="card-img-top" alt="...">
+            <a href="">
+
+                <img src="/img/card.jpg" class="card-img-top" alt="...">
+            </a>
             <div class="card-body">
               <p class="card-text">370 E 76th Street Unit: A-1105 
                 $625,000
@@ -144,6 +174,9 @@
 
     </section>
 
+
+
+
 <section class="testimonials">
 
     <h3>WORK WITH ME</h3>
@@ -168,9 +201,9 @@
 
     <div class="footerLinks">
 
-        <a href="">mail</a>
-        <a href="">phone</a>
-        <a href="">adress</a>
+        <a href="CELINEWILLIAMS@CW.COM">CELINEWILLIAMS@CW.COM</a>
+        <a href="(333)456-7890">(333)456-7890</a>
+        <a href="">2900 VALMERE DR, MALIBU, CA 90265</a>
     </div>
 
     

@@ -64,6 +64,21 @@
           flex-direction: column;
 }
 
+.section1 {
+  background-position-x: right !important;
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-image: url(/img/logo.png);
+  background-position-y: bottom !important;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+  .section1 {
+    background-attachment: unset;
+  }
+}
+
 .section1 h2 {
   color: #5e5852;
   margin-top: 250px;
@@ -138,7 +153,7 @@
   padding-left: 20px;
 }
 
-.sectionMenu {
+.sectionGallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,14 +166,24 @@
   margin-top: 50px;
 }
 
-.sectionMenu .imgMenu {
-  width: 400px;
-  height: 300px;
+.sectionGallery {
+  background-position-x: right !important;
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-image: url(/img/logo.png);
+  background-position-y: bottom !important;
+  background-attachment: fixed;
 }
 
-.sectionMenu a:hover {
-  background-color: #fff;
-  opacity: .3;
+@media only screen and (max-width: 768px) {
+  .sectionGallery {
+    background-attachment: unset;
+  }
+}
+
+.sectionGallery .imgMenu {
+  width: 400px;
+  height: 300px;
 }
 
 .sectionEmail {
@@ -174,12 +199,29 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 90px;
+  text-align: center;
+}
+
+.sectionEmail {
+  background-position-x: right !important;
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-image: url(/img/logo.png);
+  background-position-y: bottom !important;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+  .sectionEmail {
+    background-attachment: unset;
+  }
 }
 
 .sectionEmail h2 {
   color: #5e5852;
   text-transform: uppercase;
   font-family: "Quattrocento", serif;
+  margin-top: 50px;
 }
 
 .sectionEmail p {
@@ -193,16 +235,22 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 35px;
 }
 
-.sectionEmail .suscribeForm h6 {
+.sectionEmail .suscribeForm .form-label {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+}
+
+.sectionEmail .suscribeForm .mb-3 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sectionEmail .btn {
@@ -220,6 +268,7 @@
   border-radius: 0%;
 }
 
+/* CARDS PROPIEDADES*/
 .sectionCards {
   margin-top: 70px;
   display: -webkit-box;
@@ -230,6 +279,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #f1f1f1;
+  padding-bottom: 80px;
 }
 
 .sectionCards h2 {
@@ -253,35 +303,75 @@
   margin-bottom: 50px;
 }
 
+.sectionCards a:hover {
+  background-color: #fff;
+  opacity: .3;
+}
+
 .testimonials {
-  background-image: url(/img/wwu.jpg);
+  background-image: url(/img/4.jpg);
   height: 500px;
   text-align: center;
-  width: 80%;
-  padding-left: 300px;
+  width: 100%;
+  padding: 0 100px 0 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
+.testimonials {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .testimonials h3 {
   font-family: "Quattrocento", serif;
   color: #fff;
-  margin-top: 100px;
+  margin-top: 180px;
+  font-size: 45px;
 }
 
 .testimonials p {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   font-weight: 700;
+  font-size: 20px;
+}
+
+.testimonials .btn:hover {
+  color: #fff;
+  border: 2px solid;
+  border-radius: 0%;
+  background-color: transparent;
+}
+
+.testimonials .btn {
+  background-color: #fff;
+  color: #5e5852;
+  border: #fff;
+  border: 2px solid #fff;
+  border-radius: 0%;
 }
 
 footer {
   background-color: #c6bdb6;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 footer .footerTitles {
@@ -298,6 +388,7 @@ footer .footerTitles h5 {
   margin-top: 50px;
   font-family: "Quattrocento", serif;
   color: #5e5852;
+  font-size: 20px;
 }
 
 footer .footerTitles p {
@@ -310,5 +401,17 @@ footer .footerLinks {
   font-family: "Quattrocento", serif;
   font-weight: 800;
   color: #5e5852;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+footer .footerLinks a {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
