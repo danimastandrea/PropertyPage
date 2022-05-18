@@ -1,6 +1,6 @@
 /* variables */
+/* HOME PAGE*/
 .encabezado {
-  background-color: #000;
   height: 500px;
 }
 
@@ -364,7 +364,7 @@
 
 footer {
   background-color: #c6bdb6;
-  height: 300px;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,7 +374,7 @@ footer {
           flex-direction: row;
 }
 
-footer .footerTitles {
+footer .logoTitles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,17 +384,33 @@ footer .footerTitles {
           flex-direction: column;
 }
 
-footer .footerTitles h5 {
-  margin-top: 50px;
-  font-family: "Quattrocento", serif;
-  color: #5e5852;
-  font-size: 20px;
+footer .logoTitles .footerTitles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 100px;
 }
 
-footer .footerTitles p {
+footer .logoTitles .footerTitles h5 {
+  margin-top: 70px;
+  font-family: "Quattrocento", serif;
+  color: #5e5852;
+  font-size: 25px;
+}
+
+footer .logoTitles .footerTitles p {
   font-family: "Montserrat", sans-serif;
   color: #5e5852;
   font-weight: 600;
+}
+
+footer .logoTitles .logo {
+  margin-left: 80px;
+  margin-top: 30px;
 }
 
 footer .footerLinks {
@@ -408,10 +424,57 @@ footer .footerLinks {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 50px;
+  margin-top: 80px;
+  margin-left: 100px;
 }
 
 footer .footerLinks a {
   margin-bottom: 20px;
+  text-decoration: none;
+  color: #5e5852;
+}
+
+footer .footerLinks a:hover {
+  color: #7E776F;
+}
+
+/*PROP PAGE*/
+.navBar2 {
+  background-color: #fff;
+  height: 50px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navBar2 .navUl2 {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10px;
+}
+
+.navBar2 .navUl2 li {
+  display: inline-block;
+}
+
+.navBar2 .navUl2 li .navLink {
+  text-transform: uppercase;
+  color: #5e5852;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.navBar2 .navUl2 li .navLink:hover {
+  text-decoration: underline;
+  color: #c6bdb6;
 }
 /*# sourceMappingURL=style.css.map */
