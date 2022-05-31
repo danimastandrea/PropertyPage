@@ -417,4 +417,146 @@ footer{
 
         }
     }
+/* BODY - CAROUSEL*/ 
+    .carousel-inner{
+        height: 500px;
+        
+
+        .d-block w-100{
+            height: 400px;
+        }
+    }
     
+/* TEXT*/
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    background-color: $details;
+    .presentationText{
+        margin-top: 50px;
+        padding-left: 50px;
+        padding-right:30px;
+        margin-bottom: 50px;
+        
+
+        h2{
+            font-family: $titleFont;
+            color: $fontColor;
+
+
+        }
+        p{
+            font-family: $textFont;
+            color: $textFont;
+            font-weight: 700;
+
+        }
+
+    }
+}
+
+.propertyDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    &{
+        background-position-x: right!important;
+        background-repeat: no-repeat;
+        background-size: contain!important;
+        background-image:url(/img/logo.png);
+        background-position-y: bottom!important;
+        background-attachment: fixed;
+        }
+        @media only screen and (max-width: 768px) {
+        &{
+        background-attachment:unset;
+        }
+        }
+    
+    h2{
+        font-family: $titleFont;
+        color: $fontColor;
+        margin-top: 50px;
+    }
+    h4{
+        font-family: $titleFont;
+        color: $fontColor;
+        margin-top: 20px;
+    }
+
+    .amenitiesGroup{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+        margin-top: 40px;
+        
+
+        .amenities{
+            display: flex;
+            flex-direction: row;
+           
+            
+            h6{
+                font-family: $textFont;
+                color: $details;
+                padding-right: 30px;
+                font-weight: 600;
+
+            }
+            p{
+                font-family: $titleFont;
+                color: $details;
+            }
+        }
+    }
+}
+
+
+/* ABOUT PAGE*/
+.sectionCeline{
+    
+        display: flex;
+       flex-direction: row;
+       background-color: #f1f1f1;
+       margin-top: 80px;
+    
+                div{
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           text-align: left;
+           margin-top: 90px;
+           padding-left: 60px;
+    
+           
+    
+    h2{
+               color: $fontColor;
+               text-transform: uppercase;
+               margin-bottom: 30px;
+               font-family: $titleFont;
+               
+    }
+        p{
+               color: $fontColor;
+               font-family: $textFont;
+               font-weight: 600;
+               padding-right: 60px;
+     }
+    }
+       .aside{
+        padding-top: 20px;
+        margin-top: 30px;
+           .imgAbout2{
+            padding-top: 20px;
+           }   
+       }  
+         
+         
+    } 

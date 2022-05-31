@@ -477,4 +477,178 @@ footer .footerLinks a:hover {
   text-decoration: underline;
   color: #c6bdb6;
 }
+
+/* BODY - CAROUSEL*/
+.carousel-inner {
+  height: 500px;
+}
+
+.carousel-inner .d-block w-100 {
+  height: 400px;
+}
+
+/* TEXT*/
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #c6bdb6;
+}
+
+.presentation .presentationText {
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 30px;
+  margin-bottom: 50px;
+}
+
+.presentation .presentationText h2 {
+  font-family: "Quattrocento", serif;
+  color: #5e5852;
+}
+
+.presentation .presentationText p {
+  font-family: "Montserrat", sans-serif;
+  color: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.propertyDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.propertyDescription {
+  background-position-x: right !important;
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-image: url(/img/logo.png);
+  background-position-y: bottom !important;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+  .propertyDescription {
+    background-attachment: unset;
+  }
+}
+
+.propertyDescription h2 {
+  font-family: "Quattrocento", serif;
+  color: #5e5852;
+  margin-top: 50px;
+}
+
+.propertyDescription h4 {
+  font-family: "Quattrocento", serif;
+  color: #5e5852;
+  margin-top: 20px;
+}
+
+.propertyDescription .amenitiesGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.propertyDescription .amenitiesGroup .amenities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.propertyDescription .amenitiesGroup .amenities h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #c6bdb6;
+  padding-right: 30px;
+  font-weight: 600;
+}
+
+.propertyDescription .amenitiesGroup .amenities p {
+  font-family: "Quattrocento", serif;
+  color: #c6bdb6;
+}
+
+/* ABOUT PAGE*/
+.sectionCeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #f1f1f1;
+  margin-top: 80px;
+}
+
+.sectionCeline div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  margin-top: 90px;
+  padding-left: 60px;
+}
+
+.sectionCeline div h2 {
+  color: #5e5852;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: "Quattrocento", serif;
+}
+
+.sectionCeline div p {
+  color: #5e5852;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding-right: 60px;
+}
+
+.sectionCeline .aside {
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+.sectionCeline .aside .imgAbout2 {
+  padding-top: 20px;
+}
 /*# sourceMappingURL=style.css.map */
