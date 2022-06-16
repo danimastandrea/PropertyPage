@@ -200,6 +200,7 @@
           align-items: center;
   margin-top: 90px;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .sectionEmail {
@@ -309,7 +310,7 @@
 }
 
 .testimonials {
-  background-image: url(/img/4.jpg);
+  background-image: url(/img/wwu.jpg);
   height: 500px;
   text-align: center;
   width: 100%;
@@ -537,7 +538,7 @@ footer .footerLinks a:hover {
   background-position-x: right !important;
   background-repeat: no-repeat;
   background-size: contain !important;
-  background-image: url(/img/logo.png);
+  background-image: url(img/logo.png);
   background-position-y: bottom !important;
   background-attachment: fixed;
 }
@@ -601,6 +602,45 @@ footer .footerLinks a:hover {
 }
 
 /* ABOUT PAGE*/
+.navBar {
+  background-color: #fff;
+  height: 50px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navBar .navUl {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10px;
+}
+
+.navBar .navUl li {
+  display: inline-block;
+}
+
+.navBar .navUl li .navLink {
+  text-transform: uppercase;
+  color: #5e5852;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.navBar .navUl li .navLink:hover {
+  text-decoration: underline;
+  color: #c6bdb6;
+}
+
 .sectionCeline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -610,45 +650,102 @@ footer .footerLinks a:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #f1f1f1;
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
-.sectionCeline div {
+.sectionCeline .textAbout {
+  padding-top: 100px;
+  padding-left: 70px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+
+.sectionCeline .textAbout h2 {
+  color: #5e5852;
+  text-transform: uppercase;
+  font-family: "Quattrocento", serif;
+}
+
+.sectionCeline .textAbout p {
+  color: #5e5852;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.sectionCeline .textAbout .btn {
+  color: #5e5852;
+  border: 2px solid;
+  border-radius: 0%;
+}
+
+.sectionCeline .textAbout .btn:hover {
+  background-color: #5e5852;
+  color: #fff;
+  border: #5e5852;
+  border: 2px solid #5e5852;
+  border-radius: 0%;
+}
+
+/* CONTACT PAGE */
+.contactPage {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contactPage .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactPage .contact .contactDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: left;
-  margin-top: 90px;
-  padding-left: 60px;
+  margin-right: 10px;
 }
 
-.sectionCeline div h2 {
-  color: #5e5852;
-  text-transform: uppercase;
-  margin-bottom: 30px;
+.contactPage .contact .contactDetails h2 {
   font-family: "Quattrocento", serif;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
-.sectionCeline div p {
-  color: #5e5852;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  padding-right: 60px;
+.contactPage .contact .contactDetails a {
+  color: #fff;
 }
 
-.sectionCeline .aside {
-  padding-top: 20px;
+.contactPage .contact .contactDetails a:hover {
+  color: #E7E6E6;
+}
+
+.contactPage .contactForm {
+  padding-left: 20px;
+  padding-top: 150px;
+}
+
+.contactPage .contactForm form label {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.contactPage .contactForm form .btn {
+  color: #fff;
+  border: 2px solid;
+  border-radius: 0%;
   margin-top: 30px;
-}
-
-.sectionCeline .aside .imgAbout2 {
-  padding-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

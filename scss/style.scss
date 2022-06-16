@@ -184,6 +184,7 @@ h2{
     align-items: center;
     margin-top: 90px;
     text-align: center;
+    padding-bottom: 50px;
    
     &{
         background-position-x: right!important;
@@ -271,7 +272,7 @@ h2{
 }
  
 .testimonials{
-    background-image: url(/img/4.jpg);
+    background-image: url(/img/wwu.jpg);
     
     height: 500px;
     text-align: center;
@@ -312,7 +313,7 @@ h2{
     }
     .btn{
         background-color: #fff;
-        color: $fontColor;
+        color: $fontColor ;
         border: #fff;
         border: 2px solid #fff;
         border-radius: 0%;
@@ -372,6 +373,8 @@ footer{
     }
 }
 
+
+
 /*PROP PAGE*/ 
   
     
@@ -424,6 +427,7 @@ footer{
 
         .d-block w-100{
             height: 400px;
+           
         }
     }
     
@@ -467,7 +471,7 @@ footer{
         background-position-x: right!important;
         background-repeat: no-repeat;
         background-size: contain!important;
-        background-image:url(/img/logo.png);
+        background-image:url(img/logo.png);
         background-position-y: bottom!important;
         background-attachment: fixed;
         }
@@ -519,44 +523,152 @@ footer{
 
 
 /* ABOUT PAGE*/
+.navBar{
+    background-color: #fff;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    
+
+    .navUl{
+       
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        
+        
+        li{
+            display: inline-block;
+            
+            
+            
+
+            .navLink{
+               text-transform: uppercase;
+               color: $fontColor;
+               font-weight: 600;
+               font-family: $textFont;
+               padding-left: 50px;
+               padding-right: 50px;
+               
+               
+            }
+            .navLink:hover{
+                text-decoration: underline;
+                color: $details;
+               
+            }
+        }
+
+    }
+}
+
 .sectionCeline{
     
         display: flex;
        flex-direction: row;
        background-color: #f1f1f1;
-       margin-top: 80px;
-    
-                div{
-           flex-direction: column;
-           justify-content: center;
-           align-items: center;
-           text-align: left;
-           margin-top: 90px;
-           padding-left: 60px;
+       padding-top: 80px;
+       
+      
+     .textAbout{
+        padding-top: 100px;
+       padding-left: 70px;
+       padding-right: 100px;
+       padding-bottom: 100px;
+
+         h2{
+                    color: $fontColor;
+                    text-transform: uppercase;
+                    
+                    font-family: $titleFont;
+                    
+         }
+             p{
+                    color: $fontColor;
+                    font-family: $textFont;
+                    font-weight: 600;
+                    
+          }
+          .btn{
+             color: $fontColor;
+             border: 2px solid;
+             border-radius: 0%;
+            
+         }
+         .btn:hover{
+             background-color: $fontColor ;
+             color: #fff;
+             border: $fontColor;
+             border: 2px solid $fontColor;
+             border-radius: 0%;
+         }
+     }      
     
            
     
-    h2{
-               color: $fontColor;
-               text-transform: uppercase;
-               margin-bottom: 30px;
-               font-family: $titleFont;
-               
+
     }
-        p{
-               color: $fontColor;
-               font-family: $textFont;
-               font-weight: 600;
-               padding-right: 60px;
-     }
-    }
-       .aside{
-        padding-top: 20px;
-        margin-top: 30px;
-           .imgAbout2{
-            padding-top: 20px;
-           }   
-       }  
+
+      
          
          
-    } 
+    
+
+
+    /* CONTACT PAGE */ 
+
+    .contactPage{
+        background-color: rgba(0,0,0,0.8);
+       
+        
+
+        .contact{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content: center;
+            
+           
+
+            .contactDetails{
+                display: flex;
+                flex-direction: column;
+                margin-right: 10px;
+                h2{
+                    font-family: $titleFont;
+                    color: #fff;
+                    
+                    margin-bottom: 30px;
+                }
+                a{
+                    color: #fff;
+                }
+                a:hover{
+                    color: #E7E6E6;
+                }
+            }
+        }
+
+        .contactForm{
+          padding-left: 20px;
+          padding-top: 150px;
+         
+            form{
+                
+                label{
+                    color: #fff;
+                    text-transform: uppercase;
+                   
+                }
+                .btn{
+                    color: #fff;
+                    border: 2px solid;
+                    border-radius: 0%;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
