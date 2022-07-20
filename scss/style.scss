@@ -6,9 +6,8 @@ $textFont: 'Montserrat', sans-serif;
 
 /* HOME PAGE*/ 
 .encabezado{
-    
-    height: 500px;
-    
+        
+    width: 100%;   
     
 
 .navBar{
@@ -17,6 +16,7 @@ $textFont: 'Montserrat', sans-serif;
         margin: auto;
         display: flex;
         justify-content: space-around;
+        width: 100%;
         
 
         .navUl{
@@ -63,6 +63,7 @@ $textFont: 'Montserrat', sans-serif;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
     &{
         background-position-x: right!important;
         background-repeat: no-repeat;
@@ -249,6 +250,7 @@ h2{
     flex-direction: column;
     background-color: #f1f1f1;
     padding-bottom: 80px;
+    
 
     h2{
         font-family: $titleFont;
@@ -372,6 +374,118 @@ footer{
        }
     }
 }
+
+
+/* MOBILE HOME*/ 
+@media (max-width:767px){
+.encabezado{
+    width: 100%;
+
+    .navBar{
+        width: 100%;
+        height: 30px;
+
+        .navUl{
+            font-size: 11px;
+            justify-content: center;
+            padding-left: 5px;          
+
+            
+        }
+    }
+
+    .imgHeader{
+        height: 200px;
+    }
+}
+.section1{
+    margin-top: 0;
+    margin-bottom: 0;
+    h2{
+        margin-top: 50px;
+        font-size: 20px;
+
+    }
+    h1{
+        font-size: 18px;
+    }
+}
+.sectionGallery{
+    flex-direction: column;
+
+    .imgMenu{
+        width: 100%;
+        height: 250px;
+    }
+}
+
+.sectionAbout{
+    margin-top: 15px;
+    width: 100%;
+    flex-direction: column;
+    article{
+        margin-top: 45px;
+
+        .btn{
+            margin-bottom: 45px;
+        }
+    }
+    .imgAbout{
+        width: 100%;
+    }
+}
+
+.sectionEmail{
+    h2{
+        margin-top: 10px ;
+    }
+}
+
+.sectionCards{
+    width: 100%;
+    .cards{
+        flex-direction: column;
+        
+        justify-content: center;
+    }
+}
+
+.testimonials{
+    h3{
+        font-size: 25px;
+        width: 500px;
+    }
+    p{
+        font-size: 15px;
+        width: 250px;
+    }
+    
+}
+
+footer{
+    width: 100%;
+    flex-direction: column;
+    height: 600px;
+
+    .footerTitles{
+        margin-left: 20px;
+    }
+    .logo{
+        display: none;
+    }
+
+
+    .footerLinks{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+}
+}
+
+
+
+
+
 
 
 
@@ -672,3 +786,6 @@ footer{
             }
         }
     }
+
+
+   

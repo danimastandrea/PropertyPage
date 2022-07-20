@@ -1,7 +1,7 @@
 /* variables */
 /* HOME PAGE*/
 .encabezado {
-  height: 500px;
+  width: 100%;
 }
 
 .encabezado .navBar {
@@ -13,6 +13,7 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 100%;
 }
 
 .encabezado .navBar .navUl {
@@ -62,6 +63,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 .section1 {
@@ -437,6 +439,106 @@ footer .footerLinks a {
 
 footer .footerLinks a:hover {
   color: #7E776F;
+}
+
+/* MOBILE HOME*/
+@media (max-width: 767px) {
+  .encabezado {
+    width: 100%;
+  }
+  .encabezado .navBar {
+    width: 100%;
+    height: 30px;
+  }
+  .encabezado .navBar .navUl {
+    font-size: 11px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 5px;
+  }
+  .encabezado .imgHeader {
+    height: 200px;
+  }
+  .section1 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .section1 h2 {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  .section1 h1 {
+    font-size: 18px;
+  }
+  .sectionGallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectionGallery .imgMenu {
+    width: 100%;
+    height: 250px;
+  }
+  .sectionAbout {
+    margin-top: 15px;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sectionAbout article {
+    margin-top: 45px;
+  }
+  .sectionAbout article .btn {
+    margin-bottom: 45px;
+  }
+  .sectionAbout .imgAbout {
+    width: 100%;
+  }
+  .sectionEmail h2 {
+    margin-top: 10px;
+  }
+  .sectionCards {
+    width: 100%;
+  }
+  .sectionCards .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .testimonials h3 {
+    font-size: 25px;
+    width: 500px;
+  }
+  .testimonials p {
+    font-size: 15px;
+    width: 250px;
+  }
+  footer {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 600px;
+  }
+  footer .footerTitles {
+    margin-left: 20px;
+  }
+  footer .logo {
+    display: none;
+  }
+  footer .footerLinks {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
 }
 
 /*PROP PAGE*/
